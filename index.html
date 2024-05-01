@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Password Generator</title>
+    <link rel="icon" type="icon" href="CWT logo.png">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body> 
+    <div class="main">
+        <div class="container">
+            <h1>Random Password Generator</h1>
+            <input type="text" id="generatedPassword" placeholder="Click to Generate" disabled>
+            <button id="copyPassword">Copy</button>
+            <div class="settings">
+                <div class="setting-group password-length">
+                    <input type="range" id="passwordLength" min="5" max="12" value="5">
+                    <label for="passwordLength">Password Length</label>
+                </div>
+                <div class="settings-checkbox">
+                    <div class="seperate-settings">
+                        <div class="setting-group">
+                            <input type="checkbox" id="includeUppercase" checked>
+                            <label for="includeUppercase">Uppercase</label>
+                        </div>
+                        <div class="setting-group">
+                            <input type="checkbox" id="includeLowercase" checked>
+                            <label for="includeLowercase">Lowercase</label>
+                        </div>
+                    </div>
+                    <div class="seperate-settings">
+                        <div class="setting-group">
+                            <input type="checkbox" id="includeNumbers" checked>
+                            <label for="includeNumbers">Numbers</label>
+                        </div>
+                        <div class="setting-group">
+                            <input type="checkbox" id="includeSpecialCharacters" checked>
+                            <label for="includeSpecialCharacters">Special Characters</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <button id="generatePassword">Generate Password</button>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

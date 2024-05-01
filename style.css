@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: rgb(190, 190, 190);
+}
+.container {
+    margin-top: 100px;
+    text-align: center;
+    background-color: rgb(220, 220, 220);
+    padding: 50px;
+    border: 2px solid;
+    box-shadow: 0 0 30px black;
+    border-radius: 10px;
+    font-size: 20px;
+}
+h1 {
+    margin-bottom: 20px;
+}
+#generatedPassword, #copyPassword {
+    font-size: 15px;
+    padding: 10px;
+}
+.settings-checkbox {
+    display: flex;
+    margin-left: 90px;
+}
+.setting-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.setting-group label {
+    margin-left: 10px;
+    margin-right: 40px;
+}
+.setting-group input[type="checkbox"] {
+    width: 30px;
+    height: 25px;
+}
+.password-length {
+    flex-direction: column;
+    margin-top: 10px;
+}
+.password-length input {
+    width: 250px;
+}
+#generatePassword {
+    margin-top: 20px;
+    font-size: 20px;
+    padding: 10px;
+    width: 400px;
+}
